@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Sarala&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Quicksand:wght@600&family=Sarala&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #edf6f9;
+        }
+
+        .cabecalho{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 25px;
+            margin-right: 5%;
+            margin-top: 1%;
+        }
+
+        .menu{
+            display: flex;
+            gap: 100px;
+        }
+
+        .menu__links{
+            text-decoration: none;
+        }
+
+        a:hover{
+            border-left: 4px solid #3a5a40;
+            padding-left: 25px;
+            transition: 1s;
+        }
+
+        h1, h2{
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            font-family: 'Sarala', sans-serif;
+            color: #3a5a40;
+        }
+
+        .paragrafo, a{
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Sarala', sans-serif;
+            color: #3a5a40;
+        }
+        
+        .main{
+            margin-top: 2%;
+            border-top: solid 1px #e9edc9;
+            max-width: 1052px;
+            margin-left: 9%;
+            padding-top: 2%;
+        }
+
+        .musicas{
+            display: flex;
+            flex-direction: row;
+            gap: 7%;
+            justify-content: center;
+            padding-top: 2%;
+        }
+
+        .apresentacoes{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2%;
+        }
+
+        .apresentacao{
+            display: flex;
+            flex-direction: column;
+            padding-top: 3%;
+            gap: 25px;
+            justify-content: center;
+            margin-left: 20%;
+        }
+
+        .paragrafo__apresentacao1{
+            margin-left: 28%;
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            font-family: 'Sarala', sans-serif;
+            color: #3a5a40;
+            font-weight: bold;
+        }
+
+        .paragrafo__apresentacao2{
+            margin-left: 25%;
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            font-family: 'Sarala', sans-serif;
+            color: #3a5a40;
+            font-weight: bold;
+        }
+
+        .paragrafo__apresentacao3{
+            margin-left: 32%;
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            font-family: 'Sarala', sans-serif;
+            color: #3a5a40;
+            font-weight: bold;
+        }
+
+        .rodape{
+            border-top: solid 1px #e9edc9;
+            margin-top: 4%;
+            padding-top: 6%;
+            background-color: #3a5a40
+        }
+
+        .paragrafo__rodape{
+            margin-left: 34%;
+            padding-bottom: 70px;
+            color: #e9edc9;
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Sarala', sans-serif;
+        }
+    </style>
+    <title>Musicas</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div>
+            <h1 class="titulo">ELIS REGINA</h1>
+        </div>
+        
+        <div>
+            <nav class="menu">
+                <a href="sobre.html" class="menu__links">Sobre</a>
+                <a href="musicas.html" class="menu__links">Músicas</a>
+                <a href="shop.html" class="menu__links">Shop</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <h2>Clássicos</h2>
+        <div class="musicas">
+            <div class="musica">
+                <img src="./assets/falsoBrilhante.jpeg" width="250" height="250">
+                <p class="paragrafo">Como nossos pais</p>
+                <audio src="./assets/audios/Como Nossos Pais (320 kbps).mp3" controls></audio>
+            </div>
+
+            <div class="musica">
+                <img src="./assets/tinhaqueSer.jpeg" width="255" height="252">
+                <p class="paragrafo">Só tinha de ser com você</p>
+                <audio src="./assets/audios/Só Tinha De Ser Com Você (320 kbps).mp3" controls></audio>
+            </div>
+            
+            <div class="musica">
+                <img src="./assets/tiroAoalvaro.jpeg" width="250" height="250">
+                <p class="paragrafo">Tiro ao Alvaro</p>
+                <audio src="./assets/audios/Elis Regina & Adoniran Barbosa - Tiro ao álvaro (320 kbps).mp3" controls></audio>
+            </div>
+        </div>
+
+        <div class="apresentacoes">
+            <h2>Apresentações ao vivo</h2>
+            <div class="apresentacao">
+                <video src="./assets/videos/como nossos pais.mp4" controls width="600" height="400"></video>
+                <p class="paragrafo__apresentacao1">Como nossos pais</p>
+            </div>
+
+            <div class="apresentacao">
+                <video src="./assets/videos/o bebado e a equilibrista.mp4" controls width="600" height="400"></video>
+                <p class="paragrafo__apresentacao2">O bebado e a equilibrista</p>
+            </div>
+
+            <div class="apresentacao">
+                <video src="./assets/videos/trem azul.mp4" controls width="600" height="400"></video>
+                <p class="paragrafo__apresentacao3">Trem azul</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p class="paragrafo__rodape">"Sentimental eu fico quando pouso na mesa de um bar"</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Quicksand:wght@600&family=Sarala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #edf6f9;
+}
+
+p, h1, h2, tr, td, li, caption, a{
+    color: #3a5a40;
+}
+
+h1, h2, caption, th, li{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sarala', sans-serif;
+}
+
+p, tr, td, a{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Sarala', sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.menu{
+    display: flex;
+    gap: 100px;
+}
+
+.menu__links{
+    text-decoration: none;
+}
+
+a:hover{
+    border-left: 4px solid #3a5a40;
+    padding-left: 25px;
+    transition: 1s;
+}
+
+.main{
+    margin-left: 4%;
+    max-width: 1200px;
+    margin-top: 2%;
+}
+
+.apresentacao{
+    display: flex;
+    gap: 50px;
+    border-top: solid 1px #e9edc9;
+    padding-top: 50px;
+}
+
+.imagem__nascimento{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tabela__nascimento{
+    border: solid 1px #e9edc9;
+    width: 200px;
+    margin-left: 33%;   
+}
+
+td{
+    border: solid 1px #e9edc9;
+}
+
+img{
+    margin-left: 3%;
+}
+
+.paragrafo__apresentacao{
+    max-width: 350px;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-size: 19px;
+}
+
+.biografia{
+    display: flex;
+    flex: row;
+    margin-top: 3%;
+    gap: 80px;
+}
+
+.paragrafo__biografia{
+    max-width: 750px;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+.curiosidades{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 900px;
+    margin-left: 13%;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.titulo__curiosidades{
+    margin-left: 32%;
+}
+
+.item__lista{
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   list-style-type: decimal;
+}
+
+.paragrafo__lista{
+    font-size: 20px;
+}
+
+li{
+    font-size: 18px;
+}
+
+.rodape{
+    border-top: solid 1px #e9edc9;
+    margin-top: 4%;
+    padding-top: 6%;
+    background-color: #3a5a40
+}
+
+.paragrafo__rodape{
+    margin-left: 40%;
+    padding-bottom: 70px;
+    color: #e9edc9;
+}
